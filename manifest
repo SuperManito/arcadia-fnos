@@ -1,0 +1,14 @@
+appname               = arcadia
+version               = 1.1.0
+display_name          = Arcadia
+desc                  = 一站式代码自动化运维平台：写脚本、跑定时任务、服务托管、消息聚合、AI Agent 运行基座，一个面板搞定全流程。
+platform              = all
+source                = thirdparty
+maintainer            = SuperManito
+maintainer_url        = https://arcadia.cool
+distributor           = SuperManito
+desktop_uidir         = ui
+desktop_applaunchname = arcadia.Application
+service_port          = 5678
+checkport             = false
+ctl_stop              = true

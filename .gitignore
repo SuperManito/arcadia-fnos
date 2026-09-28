@@ -1,0 +1,9 @@
+# 打包产物
+*.fpk
+
+# 打包工具二进制
+fnpack
+fnpack.exe
+
+# 系统文件
+.DS_Store

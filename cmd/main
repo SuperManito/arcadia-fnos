@@ -1,0 +1,29 @@
+#!/bin/bash
+
+CONTAINER_NAME="arcadia"
+
+is_running () {
+    docker inspect "$CONTAINER_NAME" 2>/dev/null | grep -q '"Status": "running"'
+}
+
+case $1 in
+start)
+    # docker application will be started by appcenter
+    exit 0
+    ;;
+stop)
+    # docker application will be stopped by appcenter
+    exit 0
+    ;;
+status)
+    # exit 0 if running, exit 3 if not running
+    if is_running; then
+        exit 0
+    fi
+    exit 3
+    ;;
+*)
+    echo "Unknown command: $1" > "$TRIM_TEMP_LOGFILE"
+    exit 1
+    ;;
+esac

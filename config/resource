@@ -1,0 +1,32 @@
+{
+  "docker-project": {
+    "projects": [
+      {
+        "name": "arcadia",
+        "path": "docker"
+      }
+    ]
+  },
+  "data-share": {
+    "shares": [
+      {
+        "name": "arcadia/config"
+      },
+      {
+        "name": "arcadia/log"
+      },
+      {
+        "name": "arcadia/scripts"
+      },
+      {
+        "name": "arcadia/repo"
+      },
+      {
+        "name": "arcadia/raw"
+      },
+      {
+        "name": "arcadia/tgbot"
+      }
+    ]
+  }
+}

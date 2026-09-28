@@ -1,0 +1,31 @@
+[
+  {
+    "stepTitle": "安装配置",
+    "items": [
+      {
+        "type": "tips",
+        "helpText": "Arcadia 默认 Web 端口为 5678，如与已有服务冲突请修改。若镜像拉取失败，请在系统 Docker 应用的「镜像仓库 → 仓库设置」中添加并启用加速仓库。"
+      },
+      {
+        "type": "text",
+        "field": "wizard_port",
+        "label": "Web 访问端口",
+        "initValue": "5678",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入访问端口"
+          },
+          {
+            "pattern": "^[0-9]+$",
+            "message": "端口只能为数字"
+          }
+        ]
+      },
+      {
+        "type": "tips",
+        "helpText": "初始登录用户名 useradmin、密码 passwd，首次登录后请按页面引导及时修改。"
+      }
+    ]
+  }
+]

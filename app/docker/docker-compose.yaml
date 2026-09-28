@@ -1,0 +1,18 @@
+services:
+  arcadia:
+    image: ${DOCKER_MIRROR}docker.io/supermanito/arcadia:1.1.0
+    container_name: arcadia
+    hostname: arcadia
+    restart: unless-stopped
+    tty: true
+    cap_add:
+      - SYS_PTRACE
+    ports:
+      - "${wizard_port}:5678"
+    volumes:
+      - /var/apps/arcadia/shares/arcadia/config:/arcadia/config
+      - /var/apps/arcadia/shares/arcadia/log:/arcadia/log
+      - /var/apps/arcadia/shares/arcadia/scripts:/arcadia/scripts
+      - /var/apps/arcadia/shares/arcadia/repo:/arcadia/repo
+      - /var/apps/arcadia/shares/arcadia/raw:/arcadia/raw
+      - /var/apps/arcadia/shares/arcadia/tgbot:/arcadia/tgbot

@@ -1,0 +1,8 @@
+{
+    "defaults":
+    {
+        "run-as": "package"
+    },
+    "username": "docker-arcadia",
+    "groupname": "docker-arcadia"
+}
